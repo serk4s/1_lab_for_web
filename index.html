@@ -1,40 +1,217 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/webstorm-icon-logo.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WS playground</title>
-  <link rel="stylesheet" href="/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Александр Сергиенко - Портфолио разработчика</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<header class="logo">
-  <a href="https://www.jetbrains.com/webstorm/">
-    <img src="/webstorm-logo.svg" alt="WebStorm logo" width="344"
-         height="90">
-  </a>
+<!-- хедер -->
+<header class="header">
+  <div class="container">
+    <div class="header-content">
+      <a href="#" class="logo">SERK4S</a>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#about">Обо мне</a></li>
+          <li><a href="#skills">Навыки</a></li>
+          <li><a href="#portfolio">Портфолио</a></li>
+          <li><a href="#contact">Контакты</a></li>
+        </ul>
+      </nav>
+      <button class="mobile-menu-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </div>
 </header>
-<main id="app">
-  <h1 class="title">
-    Thank you for trying it out. <br /> Your first project is up and running
-    now.
-  </h1>
-  <section class="counter">
-    <div class="counter-info">
-      <p class="counter-text">Counter is</p>
-      <p class="counter-value" id="counter-value"></p>
+
+<!-- главная -->
+<section class="hero">
+  <!-- Декоративные элементы фона -->
+  <div class="hero-deco"></div>
+  <div class="hero-deco"></div>
+  <div class="hero-deco"></div>
+  <div class="hero-deco"></div>
+
+  <div class="container">
+    <div class="hero-content animate">
+      <h1>Александр Сергиенко</h1>
+      <p class="hero-subtitle">Студент 3 курса | Разработчик</p>
+      <p>Изучаю программирование, создаю интересные проекты и постоянно совершенствую свои навыки в веб-разработке и не только.</p>
+      <div class="hero-buttons">
+        <a href="#portfolio" class="btn">Мои работы</a>
+        <a href="#contact" class="btn btn-outline">Связаться со мной</a>
+      </div>
     </div>
-    <div class="counter-interaction">
-      <button id="increaseByOne" type="button">+1</button>
-      <button id="increaseByTwo" type="button">+2</button>
-      <button id="decreaseByOne" type="button">-1</button>
-      <button id="decreaseByTwo" type="button">-2</button>
+  </div>
+</section>
+
+<!-- обо мне -->
+<section id="about" class="about">
+  <div class="container">
+    <h2 class="animate">Обо мне</h2>
+    <div class="about-content">
+      <div class="about-text animate delay-1">
+        <p>Привет! Меня зовут Александр, я студент 3 курса КемГУ, изучаю программирование и компьютерные науки.</p>
+        <p>За время обучения я освоил несколько языков программирования и технологий, работал с базами данных и разрабатывал различные проекты в рамках учебной программы.</p>
+        <p>В свободное время я продолжаю изучать новые технологии и работаю над личными проектами для расширения своего портфолио.</p>
+      </div>
+      <div class="skills-grid animate delay-2">
+        <div class="skill-category">
+          <h3>Языки программирования</h3>
+          <ul class="skill-list">
+            <li>Python</li>
+            <li>C++</li>
+            <li>JavaScript</li>
+            <li>HTML/CSS</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Базы данных</h3>
+          <ul class="skill-list">
+            <li>MongoDB</li>
+            <li>SQL</li>
+            <li>MySQL</li>
+            <li>SQLite</li>
+          </ul>
+        </div>
+      </div>
     </div>
-  </section>
-</main>
-<footer class="technologies">
-  <img src="/technologies.svg" alt="List of supported technologies">
+  </div>
+</section>
+
+<!-- портфолио -->
+<section id="portfolio" class="portfolio">
+  <div class="container">
+    <h2 class="animate">Мои работы</h2>
+    <p class="animate delay-1">Здесь представлены некоторые из моих учебных проектов и лабораторных работ</p>
+
+    <div class="portfolio-grid">
+      <div class="portfolio-item animate delay-1">
+        <div class="portfolio-img">
+          <i class="fab fa-telegram"></i>
+        </div>
+        <div class="portfolio-info">
+          <h3>TG-Bot на Python</h3>
+          <p>Разработка функционального Telegram бота для поиска музыки и исполнителей.</p>
+          <div class="portfolio-tags">
+            <span class="tag tag-python">Python</span>
+            <span class="tag tag-mongo">MongoDB</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-item animate delay-2">
+        <div class="portfolio-img">
+          <i class="fas fa-database"></i>
+        </div>
+        <div class="portfolio-info">
+          <h3>Система управления БД</h3>
+          <p>Создание системы управления базой данных для учета спортивных секций и спортсменов Кемеровской области.</p>
+          <div class="portfolio-tags">
+            <span class="tag tag-js">JavaScript</span>
+            <span class="tag tag-sql">SQL</span>
+            <span class="tag tag-mysql">MySQL</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-item animate delay-3">
+        <div class="portfolio-img">
+          <i class="fas fa-music"></i>
+        </div>
+        <div class="portfolio-info">
+          <h3>Сайт на JavaScript</h3>
+          <p>Разработка сайта на музыкальную тематику с чертами, поисками по исполнению и прочими инструментами.</p>
+          <div class="portfolio-tags">
+            <span class="tag tag-js">JavaScript</span>
+            <span class="tag tag-html">HTML</span>
+            <span class="tag tag-css">CSS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- контакты -->
+<section id="contact" class="contact">
+  <div class="container">
+    <h2 class="animate">Контакты</h2>
+    <div class="contact-content">
+      <div class="contact-info animate delay-1">
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div>
+            <h3>Email</h3>
+            <p>alexanders.sergienko@gmail.com</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-phone"></i>
+          </div>
+          <div>
+            <h3>Телефон</h3>
+            <p>+7 (958) 851-44-89</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div>
+            <h3>Местоположение</h3>
+            <p>Россия, Кемерово</p>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form animate delay-2" action="https://formspree.io/f/mvgbdlgq" method="POST">
+        <div class="form-group">
+          <label for="name">Имя</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Сообщение</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+
+        <button type="submit" class="btn">Отправить сообщение</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- футер -->
+<footer>
+  <div class="container">
+    <div class="footer-content">
+      <div class="social-links">
+        <a href="https://vk.com/serk4s" class="social-link"><i class="fab fa-vk"></i></a>
+        <a href="https://t.me/@SERK4S" class="social-link"><i class="fab fa-telegram"></i></a>
+        <a href="https://github.com/serk4s" class="social-link"><i class="fab fa-github"></i></a>
+      </div>
+
+      <p class="copyright">© 2025 Александр Сергиенко. Все права защищены.</p>
+    </div>
+  </div>
 </footer>
-<script type="module" src="/src/main.js"></script>
+
+<script src="js/script.js"></script>
 </body>
 </html>
