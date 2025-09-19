@@ -13,20 +13,34 @@
 <header class="header">
   <div class="container">
     <div class="header-content">
-      <a href="#" class="logo">SERK4S</a>
+      <a href="#" class="logo">
+        <span class="logo-icon">👨‍💻</span>
+        <span class="logo-text">SERK4S</span>
+      </a>
+
       <nav>
         <ul class="nav-list">
-          <li><a href="#about">Обо мне</a></li>
-          <li><a href="#skills">Навыки</a></li>
-          <li><a href="#portfolio">Портфолио</a></li>
-          <li><a href="#contact">Контакты</a></li>
+          <li><a href="#about"><i class="fas fa-user"></i> Обо мне</a></li>
+          <li><a href="#skills"><i class="fas fa-code"></i> Навыки</a></li>
+          <li><a href="#portfolio"><i class="fas fa-briefcase"></i> Портфолио</a></li>
+          <li><a href="#contact"><i class="fas fa-envelope"></i> Контакты</a></li>
         </ul>
       </nav>
-      <button class="mobile-menu-btn">
-        <i class="fas fa-bars"></i>
-      </button>
+
+      <div class="header-actions">
+        <button class="theme-toggle" aria-label="Переключить тему">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="mobile-menu-btn">
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+        </button>
+      </div>
     </div>
   </div>
+
+  <div class="header-progress"></div>
 </header>
 
 <!-- главная -->
