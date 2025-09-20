@@ -857,3 +857,39 @@ footer {
 .delay-3 {
     animation-delay: 0.6s;
 }
+
+/* Light theme styles */
+body.light-theme {
+    --dark-bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text-primary: #333333;
+    --text-secondary: #666666;
+    background-color: var(--dark-bg);
+    color: var(--text-primary);
+}
+
+body.light-theme .header {
+    background: linear-gradient(135deg,
+    rgba(248, 249, 250, 0.98) 0%,
+    rgba(255, 255, 255, 0.98) 100%);
+    border-bottom: 1px solid rgba(0, 201, 184, 0.2);
+}
+
+body.light-theme .header.scrolled {
+    background: rgba(248, 249, 250, 0.95);
+    box-shadow: 0 4px 30px rgba(0, 201, 184, 0.1);
+}
+
+body.light-theme .nav-list a {
+    color: var(--text-primary);
+}
+
+body.light-theme .theme-toggle {
+    background: rgba(0, 201, 184, 0.1);
+    border: 1px solid rgba(0, 201, 184, 0.3);
+    color: var(--accent-primary);
+}
+
+body.light-theme .menu-line {
+    background: var(--text-primary);
+}
